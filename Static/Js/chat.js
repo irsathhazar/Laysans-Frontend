@@ -48,7 +48,7 @@ class Chatbox {
         this.messages.push(msg1);
 
         // Send the message to Django API
-        fetch('https://laysans-backend.onrender.com/chatai/', {  // Correct URL
+        fetch('http://127.0.0.1:8000/chatai/', {  // Correct URL
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
